@@ -23,5 +23,5 @@ steps:
     pwd
     ls -al
     docker pull gruebel/retirejs:latest
-    docker run --rm -v $PWD:./ gruebel/retirejs:latest
+    docker run --rm -v $PWD gruebel/retirejs:latest
   displayName: 'npm install and build'
