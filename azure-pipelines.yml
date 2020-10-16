@@ -21,5 +21,5 @@ steps:
 
 - script: |
     docker pull gruebel/retirejs:latest
-    docker run --rm -v $PWD:/app gruebel/retirejs:latest --ignorefile .retireignore.json
+    docker run --rm -v $PWD:./ gruebel/retirejs:latest
   displayName: 'npm install and build'
