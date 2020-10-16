@@ -22,6 +22,7 @@ steps:
 - script: |
     pwd
     ls -al
+    npm install
     npm install -g retire
     retire
   displayName: 'npm install and build'
