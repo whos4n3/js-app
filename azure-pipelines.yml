@@ -20,6 +20,7 @@ steps:
     dockerVersion: '17.09.0-ce'
 
 - script: |
+    ls -al
     docker pull gruebel/retirejs:latest
     docker run --rm -v $PWD:./ gruebel/retirejs:latest
   displayName: 'npm install and build'
