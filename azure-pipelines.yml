@@ -20,7 +20,7 @@ steps:
     dockerVersion: '17.09.0-ce'
 
 - script: |
-    cd ../
+    pwd
     ls -al
     docker pull gruebel/retirejs:latest
     docker run --rm -v $PWD:./ gruebel/retirejs:latest
