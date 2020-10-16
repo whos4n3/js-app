@@ -22,6 +22,6 @@ steps:
 - script: |
     pwd
     ls -al
-    docker pull gruebel/retirejs:latest
-    docker run --rm -v $PWD gruebel/retirejs:latest
+    npm install -g retire
+    retire
   displayName: 'npm install and build'
